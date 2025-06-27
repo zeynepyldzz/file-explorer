@@ -1,6 +1,6 @@
 📁 Django File Explorer Application
-This project is a simple Django-based file explorer application that allows users to manage files and folders within the system.
 
+This project is a simple Django-based file explorer application that allows users to manage files and folders within the system.
 ![1](https://github.com/user-attachments/assets/0a1168e0-d2fd-4ad0-af0d-6c6279587b12)
 ![2](https://github.com/user-attachments/assets/539f49c8-f901-465f-8bbe-b81d2f4fb08f)
 ![3](https://github.com/user-attachments/assets/31f8bab5-c52e-4ac5-8eac-bf529dc8e062)
