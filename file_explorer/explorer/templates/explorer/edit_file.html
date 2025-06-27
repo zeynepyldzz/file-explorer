@@ -1,0 +1,8 @@
+<!-- explorer/templates/explorer/edit_file.html -->
+<h1>Edit File - {{ file.name }}</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save</button>
+</form>
+<a href="{% url 'list_files' %}">Back to File List</a>

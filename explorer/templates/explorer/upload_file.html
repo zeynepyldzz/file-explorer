@@ -1,0 +1,8 @@
+<!-- explorer/templates/explorer/upload_file.html -->
+<h1>Upload File</h1>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+</form>
+<a href="{% url 'list_files' %}">Back to File List</a>

@@ -1,0 +1,12 @@
+<h1>Copy File</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="file_name">Enter file name:</label>
+    <input type="text" name="file_name" required>
+    <br>
+    <label for="destination_folder">Enter destination folder:</label>
+    <input type="text" name="destination_folder" required>
+    <br>
+    <button type="submit">Copy</button>
+</form>
+<a href="{% url 'list_files' %}">Back to File List</a>

@@ -1,0 +1,41 @@
+<h1>File Explorer</h1>
+
+<h2>Folders</h2>
+<ul>
+    {% for folder in folders %}
+        <li>
+            <a href="{% url 'list_files_in_folder' folder %}">{{ folder }}</a>
+        </li>
+    {% endfor %}
+</ul>
+
+<h2>Files</h2>
+<ul>
+    {% for file in files %}
+        <li>
+            {{ file.name }}
+            <a href="{% url 'download_file' file.id %}">Download</a>
+            <a href="{% url 'delete_file' file.id %}">Delete</a>
+            <a href="{% url 'edit_file' file.id %}">Edit</a>
+            <a href="{% url 'copy_file' file.id %}">Copy</a>
+            <a href="{% url 'move_file' file.id %}">Move</a>
+
+
+
+        </li>
+    {% endfor %}
+</ul>
+
+
+    <h3>Functions</h3>
+<li>
+
+<a href="{% url 'upload_file'  %}">Upload File</a>
+    </li>
+
+
+
+<li>
+<a href="{% url 'create_folder' %}">Create Folder</a>
+</li>
+

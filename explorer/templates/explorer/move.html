@@ -1,0 +1,12 @@
+<h1>Move File</h1>
+<form method="post" action="{% url 'move_file'  %}">
+    {% csrf_token %}
+    <label for="source_path">Enter source path:</label>
+    <input type="text" name="source_path" required>
+    <br>
+    <label for="destination_path">Enter destination path:</label>
+    <input type="text" name="destination_path" required>
+    <br>
+    <button type="submit">Move</button>
+</form>
+<a href="{% url 'list_files'  %}">Back to File List</a>
