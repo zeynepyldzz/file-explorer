@@ -21,6 +21,7 @@ This project is a simple Django-based file explorer application that allows user
 
 
 
+
 🚀 Installation & Run
 1. Clone the repository
    
@@ -39,11 +40,11 @@ This project is a simple Django-based file explorer application that allows user
 
 4. Apply Migrations
    
-  python manage.py migrate
+    python manage.py migrate
 
 5. Run the Development Server
     
-   python manage.py runserver 8010
+    python manage.py runserver 8010
 
 Visit the app in your browser at:
 👉 http://127.0.0.1:8010
@@ -51,11 +52,15 @@ Visit the app in your browser at:
 
 🗂️ Project Structure
 📁 explorer/models.py
+
 Defines the File model containing file name, type, and content.
 📁 explorer/forms.py
+
 Includes forms for file upload, edit, folder creation, and move actions.
 📁 explorer/views.py
+
 Handles all core logic:
 list_files, upload_file, edit_file, delete_file, download_file, create_folder, copy_file, move_file, etc.
 📁 explorer/urls.py
+
 Maps URLs to their respective views.
